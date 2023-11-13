@@ -1,20 +1,16 @@
-function typ(){
-
+function showData(){
     try{
-        function myApi(){
-            let data = fetch ("https://jsonplaceholder.typicode.com/posts")
+       async function myApi(){
+            let responce =  await fetch ("https://jsonplaceholder.typicode.com/posts")
+            const data = await responce.json()
             console.log(data)
             console.log("try block")
         }
-        
+myApi()         
     }
     catch{
         console.log("i am catch")
     }
 }
 
-
-console.log(typ)
-
-console.log("hellwo")
-
+showData()
