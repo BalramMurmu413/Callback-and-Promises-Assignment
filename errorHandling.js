@@ -4,7 +4,7 @@ function showData(){
             let responce =  await fetch ("https://jsonplaceholder.typicode.com/posts")
             const data = await responce.json()
             console.log(data)
-            console.log("try block")
+            console.log("Data Handled")
         }
 myApi()         
     }
